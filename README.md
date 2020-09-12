@@ -1,2 +1,3 @@
 # SOLID
-Solid principles in C#
+
+Solid principles implemented in C#
