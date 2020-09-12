@@ -12,8 +12,13 @@ namespace solid
             new Square(5),
             new Square(6)
         };
-            AreaCalculator areaCalculator = new AreaCalculator(shapes);
-            areaCalculator.Output();
+            AreaCalculator areas = new AreaCalculator(shapes);
+            SumCalculatorOutputter output = new SumCalculatorOutputter(areas);
+            // Different types of output
+            output.HAML();
+            output.HTML();
+            output.JADE();
+            output.JSON();
             Console.ReadLine();
         }
     }
